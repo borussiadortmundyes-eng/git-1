@@ -23,10 +23,11 @@ do
             break;
         case 2:
             Console.WriteLine("las notas ingresadas son:");
-            foreach (double item in nota)
+            foreach (double n in nota)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(n);
             }
+            Console.ReadKey();
             break;
         case 3:
             continuar = false;
@@ -36,5 +37,5 @@ do
             break;
         }
 
-    } while (continuar = false);
+    } while (opcion!=3);
 
