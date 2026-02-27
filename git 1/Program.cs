@@ -12,10 +12,14 @@ do
     opcion = int.Parse(Console.ReadLine());
     switch (opcion)
     {
-        case 1:
-            Console.WriteLine("ingrese la nota");
-            double n = double.Parse(Console.ReadLine());
-            nota.Add(n);
+        case 1:Console.WriteLine("cuantas notas desea ingresar");
+            int cantidadnotas = int.Parse(Console.ReadLine());
+            for (int i = 0; i < cantidadnotas; i++)
+            {
+                Console.WriteLine("ingrese la nota");
+                double n = double.Parse(Console.ReadLine());
+                nota.Add(n);
+            }
             break;
         case 2:
             Console.WriteLine("las notas ingresadas son:");
